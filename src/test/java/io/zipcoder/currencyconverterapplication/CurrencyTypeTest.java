@@ -13,7 +13,7 @@ public class CurrencyTypeTest {
      * @param expectedType type of currency type to expect
      * @param currencyObject type of object to check type of
      */
-    private void test(CurrencyType expectedType, ConvertableCurrency currencyObject) {
+    private void test(CurrencyType expectedType, ConvertibleCurrency currencyObject) {
         // when
         CurrencyType actualType = CurrencyType.getTypeOfCurrency(currencyObject);
 

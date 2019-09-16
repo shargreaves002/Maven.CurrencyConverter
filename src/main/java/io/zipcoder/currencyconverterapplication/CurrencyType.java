@@ -24,7 +24,8 @@ public enum CurrencyType {
         return rate;
     }
 
-    public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
+    public static CurrencyType getTypeOfCurrency(ConvertibleCurrency currency) {
+        //TODO: return
         return null;
     }
 }

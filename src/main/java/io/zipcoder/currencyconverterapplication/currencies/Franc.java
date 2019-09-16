@@ -1,6 +1,6 @@
 package io.zipcoder.currencyconverterapplication.currencies;
 
-import io.zipcoder.currencyconverterapplication.ConvertableCurrency;
+import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 
-public class Franc implements ConvertableCurrency {
+public class Franc implements ConvertibleCurrency {
 }

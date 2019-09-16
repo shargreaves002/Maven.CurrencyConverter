@@ -1,6 +1,6 @@
 package io.zipcoder.currencyconverterapplication.currencies;
 
-import io.zipcoder.currencyconverterapplication.ConvertableCurrency;
+import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 import io.zipcoder.currencyconverterapplication.CurrencyType;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,7 +13,7 @@ public class SingaporeDollarTest {
      */
     private void testConversion(CurrencyType currencyType, Double expected) {
         // given
-        ConvertableCurrency currency = new SingaporeDollar();
+        ConvertibleCurrency currency = new SingaporeDollar();
 
         // when
         Double actual = currency.convert(currencyType);

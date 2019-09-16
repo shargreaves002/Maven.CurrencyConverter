@@ -1,6 +1,6 @@
 package io.zipcoder.currencyconverterapplication.currencies;
 
-import io.zipcoder.currencyconverterapplication.ConvertableCurrency;
+import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 
-public class Pound implements ConvertableCurrency {
+public class Pound implements ConvertibleCurrency {
 }

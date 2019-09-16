@@ -1,6 +1,6 @@
 package io.zipcoder.currencyconverterapplication.currencyconverter;
 
-import io.zipcoder.currencyconverterapplication.ConvertableCurrency;
+import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 import io.zipcoder.currencyconverterapplication.CurrencyConverter;
 import io.zipcoder.currencyconverterapplication.CurrencyType;
 import io.zipcoder.currencyconverterapplication.currencies.UniversalCurrency;
@@ -19,7 +19,7 @@ public class UniversalDollarCurrencyConverterTest {
      */
     private void testConversion(Double amountOfBaseCurrency, CurrencyType targetCurrency, Double expected) {
         // given
-        ConvertableCurrency sourceCurrency = new UniversalCurrency();
+        ConvertibleCurrency sourceCurrency = new UniversalCurrency();
 
         // when
         Double actual = CurrencyConverter.convert(amountOfBaseCurrency, sourceCurrency, targetCurrency);

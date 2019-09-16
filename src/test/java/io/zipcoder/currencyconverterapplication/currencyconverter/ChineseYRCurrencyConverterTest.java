@@ -1,6 +1,6 @@
 package io.zipcoder.currencyconverterapplication.currencyconverter;
 
-import io.zipcoder.currencyconverterapplication.ConvertableCurrency;
+import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 import io.zipcoder.currencyconverterapplication.CurrencyConverter;
 import io.zipcoder.currencyconverterapplication.CurrencyType;
 import io.zipcoder.currencyconverterapplication.currencies.ChineseYR;
@@ -19,7 +19,7 @@ public class ChineseYRCurrencyConverterTest {
      */
     private void testConversion(Double amountOfBaseCurrency, CurrencyType targetCurrency, Double expected) {
         // given
-        ConvertableCurrency sourceCurrency = new ChineseYR();
+        ConvertibleCurrency sourceCurrency = new ChineseYR();
 
         // when
         Double actual = CurrencyConverter.convert(amountOfBaseCurrency, sourceCurrency, targetCurrency);
