@@ -25,7 +25,34 @@ public enum CurrencyType {
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertibleCurrency currency) {
-        //TODO: return
-        return null;
+        String x = currency.getClass().getSimpleName();
+        switch (x){
+            case ("AustralianDollar"):
+                return AUSTRALIAN_DOLLAR;
+            case ("CanadianDollar"):
+                return CANADIAN_DOLLAR;
+            case ("ChineseYR"):
+                return CHINESE_YR;
+            case ("Euro"):
+                return EURO;
+            case ("Franc"):
+                return FRANC;
+            case ("Pound"):
+                return POUND;
+            case ("Ringgit"):
+                return RINGGIT;
+            case ("Rupee"):
+                return RUPEE;
+            case ("SingaporeDollar"):
+                return SINGAPORE_DOLLAR;
+            case ("UniversalCurrency"):
+                return UNIVERSAL_CURRENCY;
+            case ("USDollar"):
+                return US_DOLLAR;
+            case ("Yen"):
+                return YEN;
+            default:
+                return null;
+        }
     }
 }
