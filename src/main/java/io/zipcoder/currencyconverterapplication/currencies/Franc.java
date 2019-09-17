@@ -4,8 +4,7 @@ import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Franc implements ConvertibleCurrency {
-    @Override
-    public Double convert (CurrencyType currencyType) {
-        return currencyType.getRate() / CurrencyType.FRANC.getRate();
+    public CurrencyType getType() {
+        return CurrencyType.FRANC;
     }
 }

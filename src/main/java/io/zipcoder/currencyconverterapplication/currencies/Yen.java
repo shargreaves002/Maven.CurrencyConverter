@@ -4,8 +4,7 @@ import io.zipcoder.currencyconverterapplication.ConvertibleCurrency;
 import io.zipcoder.currencyconverterapplication.CurrencyType;
 
 public class Yen implements ConvertibleCurrency {
-    @Override
-    public Double convert (CurrencyType currencyType) {
-        return currencyType.getRate() / CurrencyType.YEN.getRate();
+    public CurrencyType getType() {
+        return CurrencyType.YEN;
     }
 }

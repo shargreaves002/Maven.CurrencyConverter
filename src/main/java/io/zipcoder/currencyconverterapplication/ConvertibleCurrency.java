@@ -9,6 +9,8 @@ public interface ConvertibleCurrency {
      * to get to the new currency
      */
     default Double convert(CurrencyType currencyType) {
-        return 0.0;
+        return currencyType.getRate() / this.getType().getRate();
     }
+
+    CurrencyType getType();
 }
